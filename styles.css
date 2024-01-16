@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  transition: background 2s ease-in-out;
+  overflow: hidden; /* To hide scroll bars when the background image changes */
+}
+
+#background-images {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: opacity 2s ease-in-out; /* Add transition for opacity */
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 2s ease-in-out; /* Add transition for opacity */
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.login-form {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input {
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#register-link {
+  color: #2196F3;
+  text-decoration: none;
+  font-weight: bold;
+}
